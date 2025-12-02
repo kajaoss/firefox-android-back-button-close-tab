@@ -15,6 +15,6 @@ if (window.history.length <= 1) {
 }
 ```
 
-Then save and it should just start working with the intended behavior, i.e. to close the tab if there is no more history to scroll back. And then get back to last sctive tab.
+Then save and it should just start working with the intended behavior, i.e. to close the tab if there is no more history to scroll back. And then it gets back to the previous active tab.
 
-The script has been tested on Motorola Edge 50 pro with Android 16 and Firefox 145.0.2 using violentmonkey 2.31.0.
+The script has been tested on Motorola Edge 50 pro with Android 16 and Firefox 145.0.2 using violentmonkey 2.31.0. If there is any problems please open issue with details of phone model, os version, and firefox version.
