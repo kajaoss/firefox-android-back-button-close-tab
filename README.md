@@ -1,5 +1,5 @@
 # firefox-android-back-button-close-tab
-Tampermonkey/violentmonkey script enabling back button to close tab on Firefox on Android.
+Violentmonkey script enabling back button to close tab on Firefox on Android. The script should work also with Tampermonkey but I haven't tested it.
 
 
 ## Usage:
@@ -8,7 +8,7 @@ Create a new script and copy the following to the user script section.
 // This runs on every page
 if (window.history.length <= 1) {
     // We are at the start of the tab history
-    // Listen for a back button press (this is hard to trap in JS on mobile, but possible via 'popstate')
+    // Listen for a back button press via 'popstate'
     window.addEventListener('popstate', function(event) {
          window.close(); // Try to force close the tab
     });
